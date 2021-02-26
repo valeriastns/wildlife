@@ -1,0 +1,74 @@
+.latest-articles
+    background-color: #CCCCCC
+    min-height: 1368px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    .header
+        &__title
+            font-weight: normal
+            font-size: 48px
+            color: $font-dark
+            margin-top: 120px
+        &__text
+            font-size: 24px
+            color: $font-grey
+            margin-top: 20px
+    .slides
+        display: flex
+        div.img
+            width: 300px
+            height: 360px
+            margin-left: 60px
+            margin-right: 60px
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+        div.img.first
+            background: url('../images/deer.jpg')
+        div.img.second
+            background: url('../images/squirrel.jpg')
+        div.img.third
+            background: url('../images/bird.jpg')
+        div.img
+            &__title
+                color: $font-light
+                font-size: 22px
+                font-weight: 400
+            &__descr
+                color: $font-light
+                font-weight: normal
+                font-size: 17px
+                margin-top: 10px
+                margin-bottom: 40px
+    .form
+        position: relative
+        margin-bottom: 239px
+        &__title
+            font-size: 27px
+            color: $font-dark
+            font-weight: normal
+        form
+            margin-left: -80px
+            input[type="email"]
+                width: 540px
+                height: 59px
+                margin-top: 61px
+                background-color: transparent
+                color: $font-grey
+                font-size: 23px
+                outline: none
+                border: 1px solid $font-grey
+            input[type="submit"]
+                position: absolute
+                bottom: 0px
+                width: 120px
+                height: 59px
+                background-color: $orange-main
+                color: $font-light
+                font-size: 23px
+                border-radius: 0px 5px 5px 0px
+                outline: none
+                border: 1px solid $orange-main

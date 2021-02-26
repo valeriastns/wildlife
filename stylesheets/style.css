@@ -1,21 +1,20 @@
 /* line 1, ../sass/blocks/_hero.sass */
 .header-content {
-  background-color: #02160b;
-}
-/* line 4, ../sass/blocks/_hero.sass */
-.header-content .wrapper {
   min-height: 779px;
   background: url(../images/main-img.jpg) center no-repeat;
   filter: drop-shadow(-150px 0px 150px #02160B);
-  margin: 0 auto;
-  padding: 20px 120px 150px 120px;
 }
-/* line 11, ../sass/blocks/_hero.sass */
+/* line 6, ../sass/blocks/_hero.sass */
+.header-content .header-wrapper {
+  width: 100%;
+  padding: 20px 120px 60px 120px;
+}
+/* line 10, ../sass/blocks/_hero.sass */
 .header-content header {
   display: flex;
   justify-content: space-between;
 }
-/* line 14, ../sass/blocks/_hero.sass */
+/* line 13, ../sass/blocks/_hero.sass */
 .header-content header .logo {
   width: 240px;
   height: 60px;
@@ -23,27 +22,27 @@
   justify-content: space-around;
   align-items: center;
 }
-/* line 20, ../sass/blocks/_hero.sass */
+/* line 19, ../sass/blocks/_hero.sass */
 .header-content header .logo__icon {
   background: url(../icons/logo.svg);
   width: 70px;
   height: 60px;
 }
-/* line 24, ../sass/blocks/_hero.sass */
+/* line 23, ../sass/blocks/_hero.sass */
 .header-content header .logo__text {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   color: #f7f7f7;
 }
-/* line 29, ../sass/blocks/_hero.sass */
+/* line 28, ../sass/blocks/_hero.sass */
 .header-content header nav {
   width: 480px;
   height: 48px;
   display: flex;
   align-items: center;
 }
-/* line 34, ../sass/blocks/_hero.sass */
+/* line 33, ../sass/blocks/_hero.sass */
 .header-content header nav ul li {
   display: inline;
   font-weight: 400;
@@ -52,14 +51,14 @@
   list-style: none;
   margin-right: 60px;
 }
-/* line 41, ../sass/blocks/_hero.sass */
+/* line 40, ../sass/blocks/_hero.sass */
 .header-content header nav .search {
   background: url("../icons/search-icon.svg") no-repeat;
   width: 32px;
   height: 32px;
   margin-right: 60px;
 }
-/* line 46, ../sass/blocks/_hero.sass */
+/* line 45, ../sass/blocks/_hero.sass */
 .header-content header nav button {
   width: 120px;
   height: 50px;
@@ -73,14 +72,14 @@
   color: #f7f7f7;
   text-transform: capitalize;
 }
-/* line 58, ../sass/blocks/_hero.sass */
+/* line 57, ../sass/blocks/_hero.sass */
 .header-content header nav button:hover {
   background-color: #CD6326;
   color: #333333;
   cursor: pointer;
   outline: none;
 }
-/* line 64, ../sass/blocks/_hero.sass */
+/* line 63, ../sass/blocks/_hero.sass */
 .header-content header nav button:active {
   background-color: #8F5613;
   color: #333333;
@@ -88,13 +87,13 @@
   cursor: pointer;
   outline: none;
 }
-/* line 71, ../sass/blocks/_hero.sass */
+/* line 70, ../sass/blocks/_hero.sass */
 .header-content .donate {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
 }
-/* line 75, ../sass/blocks/_hero.sass */
+/* line 74, ../sass/blocks/_hero.sass */
 .header-content .donate h1 {
   font-weight: normal;
   font-size: 48px;
@@ -102,7 +101,7 @@
   letter-spacing: 2px;
   margin-bottom: 51px;
 }
-/* line 81, ../sass/blocks/_hero.sass */
+/* line 80, ../sass/blocks/_hero.sass */
 .header-content .donate p {
   width: 274px;
   height: 108px;
@@ -111,7 +110,7 @@
   color: #f7f7f7;
   margin-bottom: 49px;
 }
-/* line 88, ../sass/blocks/_hero.sass */
+/* line 87, ../sass/blocks/_hero.sass */
 .header-content .donate button {
   height: 60px;
   width: 160px;
@@ -125,15 +124,118 @@
   text-align: center;
   text-transform: capitalize;
 }
-/* line 100, ../sass/blocks/_hero.sass */
+/* line 99, ../sass/blocks/_hero.sass */
 .header-content .donate button:hover {
   background-color: #E39128;
   cursor: pointer;
 }
-/* line 103, ../sass/blocks/_hero.sass */
+/* line 102, ../sass/blocks/_hero.sass */
 .header-content .donate button:active {
   background-color: #8F5613;
   cursor: pointer;
+}
+
+/* line 1, ../sass/blocks/_main.sass */
+.latest-articles {
+  background-color: #CCCCCC;
+  min-height: 1368px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 9, ../sass/blocks/_main.sass */
+.latest-articles .header__title {
+  font-weight: normal;
+  font-size: 48px;
+  color: #333333;
+  margin-top: 120px;
+}
+/* line 14, ../sass/blocks/_main.sass */
+.latest-articles .header__text {
+  font-size: 24px;
+  color: #666666;
+  margin-top: 20px;
+}
+/* line 18, ../sass/blocks/_main.sass */
+.latest-articles .slides {
+  display: flex;
+}
+/* line 20, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img {
+  width: 300px;
+  height: 360px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* line 29, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img.first {
+  background: url("../images/deer.jpg");
+}
+/* line 31, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img.second {
+  background: url("../images/squirrel.jpg");
+}
+/* line 33, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img.third {
+  background: url("../images/bird.jpg");
+}
+/* line 36, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img__title {
+  color: #f7f7f7;
+  font-size: 22px;
+  font-weight: 400;
+}
+/* line 40, ../sass/blocks/_main.sass */
+.latest-articles .slides div.img__descr {
+  color: #f7f7f7;
+  font-weight: normal;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+/* line 46, ../sass/blocks/_main.sass */
+.latest-articles .form {
+  position: relative;
+  margin-bottom: 239px;
+}
+/* line 49, ../sass/blocks/_main.sass */
+.latest-articles .form__title {
+  font-size: 27px;
+  color: #333333;
+  font-weight: normal;
+}
+/* line 53, ../sass/blocks/_main.sass */
+.latest-articles .form form {
+  margin-left: -80px;
+}
+/* line 55, ../sass/blocks/_main.sass */
+.latest-articles .form form input[type="email"] {
+  width: 540px;
+  height: 59px;
+  margin-top: 61px;
+  background-color: transparent;
+  color: #666666;
+  font-size: 23px;
+  outline: none;
+  border: 1px solid #666666;
+}
+/* line 64, ../sass/blocks/_main.sass */
+.latest-articles .form form input[type="submit"] {
+  position: absolute;
+  bottom: 0px;
+  width: 120px;
+  height: 59px;
+  background-color: #CD6326;
+  color: #f7f7f7;
+  font-size: 23px;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
+  border: 1px solid #CD6326;
 }
 
 /* line 8, ../sass/style.sass */
@@ -145,7 +247,12 @@
 }
 
 /* line 14, ../sass/style.sass */
-.main-container {
+.wrapper {
+  background-color: #02160b;
+}
+
+/* line 17, ../sass/style.sass */
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
