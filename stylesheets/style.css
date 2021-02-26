@@ -1,0 +1,154 @@
+/* line 1, ../sass/blocks/_hero.sass */
+.header-content {
+  background-color: #02160b;
+}
+/* line 3, ../sass/blocks/_hero.sass */
+.header-content .wrapper {
+  min-height: 779px;
+  background: url("../images/main-img.jpg") center center/cover no-repeat;
+  filter: drop-shadow(-150px 0px 150px #02160B);
+}
+/* line 8, ../sass/blocks/_hero.sass */
+.header-content header {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 11, ../sass/blocks/_hero.sass */
+.header-content header .logo {
+  width: 240px;
+  height: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* line 18, ../sass/blocks/_hero.sass */
+.header-content header .logo__icon {
+  background: url(../icons/logo.svg);
+  width: 70px;
+  height: 60px;
+}
+/* line 22, ../sass/blocks/_hero.sass */
+.header-content header .logo__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+/* line 27, ../sass/blocks/_hero.sass */
+.header-content header nav {
+  width: 478px;
+  height: 48px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+/* line 34, ../sass/blocks/_hero.sass */
+.header-content header nav ul li {
+  display: inline;
+  font-weight: 400;
+  font-size: 23px;
+  color: #f7f7f7;
+  list-style: none;
+}
+/* line 40, ../sass/blocks/_hero.sass */
+.header-content header nav .search {
+  background: url("../icons/search-icon.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+/* line 44, ../sass/blocks/_hero.sass */
+.header-content header nav button {
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #CD6326;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #f7f7f7;
+  text-transform: capitalize;
+}
+/* line 56, ../sass/blocks/_hero.sass */
+.header-content header nav button:hover {
+  background-color: #CD6326;
+  color: #333333;
+  cursor: pointer;
+}
+/* line 60, ../sass/blocks/_hero.sass */
+.header-content header nav button:active {
+  background-color: #8F5613;
+  color: #333333;
+  cursor: pointer;
+}
+/* line 64, ../sass/blocks/_hero.sass */
+.header-content .donate {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 68, ../sass/blocks/_hero.sass */
+.header-content .donate h1 {
+  font-weight: normal;
+  font-size: 48px;
+  color: #CD6326;
+  letter-spacing: 2px;
+  margin-bottom: 51px;
+}
+/* line 74, ../sass/blocks/_hero.sass */
+.header-content .donate p {
+  width: 274px;
+  height: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #f7f7f7;
+  margin-bottom: 49px;
+}
+/* line 81, ../sass/blocks/_hero.sass */
+.header-content .donate button {
+  height: 60px;
+  width: 160px;
+  background-color: #CD6326;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #f7f7f7;
+  font-size: 23px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* line 93, ../sass/blocks/_hero.sass */
+.header-content .donate button:hover {
+  background-color: #E39128;
+  cursor: pointer;
+}
+/* line 96, ../sass/blocks/_hero.sass */
+.header-content .donate button:active {
+  background-color: #8F5613;
+  cursor: pointer;
+}
+
+/* line 8, ../sass/style.sass */
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/style.sass */
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* line 18, ../sass/style.sass */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 120px 150px 120px;
+}

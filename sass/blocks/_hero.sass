@@ -1,0 +1,98 @@
+.header-content
+    background-color: #02160b
+    .wrapper
+        min-height: 779px
+        background: url('../images/main-img.jpg') center (center/cover) no-repeat
+        filter: drop-shadow(-150px 0px 150px #02160B)
+
+    header
+        display: flex
+        justify-content: space-around
+        .logo
+            width: 240px
+            height: 60px
+            margin-top: 20px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            &__icon
+                background: url(../icons/logo.svg)
+                width: 70px
+                height: 60px
+            &__text
+                font-family: 'Roboto', sans-serif
+                font-size: 32px
+                text-transform: uppercase
+                color: $font-light
+        nav
+            width: 478px
+            height: 48px
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            border: 1px solid red
+            ul li
+                display: inline
+                font-weight: 400
+                font-size: 23px
+                color: $font-light
+                list-style: none
+            .search
+                background: url('../icons/search-icon.svg') no-repeat
+                width: 32px
+                height: 32px
+            button
+                width: 120px
+                height: 50px
+                background-color: transparent
+                border: 2px solid #CD6326
+                box-sizing: border-box
+                outline: none
+                border-radius: 5px
+                font-family: 'Roboto', sans-serif
+                font-size: 23px
+                color: $font-light
+                text-transform: capitalize
+            button:hover
+                background-color: $orange-main
+                color: $font-dark
+                cursor: pointer
+            button:active
+                background-color: $orange-dark
+                color: $font-dark
+                cursor: pointer
+    .donate
+        margin-top: 120px
+        display: flex
+        flex-direction: column
+        h1
+            font-weight: normal
+            font-size: 48px
+            color: $orange-main
+            letter-spacing: 2px
+            margin-bottom: 51px
+        p
+            width: 274px
+            height: 108px
+            font-weight: normal
+            font-size: 18px
+            color: $font-light
+            margin-bottom: 49px
+        button
+            height: 60px
+            width: 160px
+            background-color: $orange-main
+            border-radius: 5px
+            outline: none
+            border: none
+            color: $font-light
+            font-size: 23px
+            font-weight: normal
+            text-align: center
+            text-transform: capitalize
+        button:hover
+            background-color: $orange-light
+            cursor: pointer
+        button:active
+            background-color: $orange-dark
+            cursor: pointer
