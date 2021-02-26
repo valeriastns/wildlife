@@ -1,17 +1,19 @@
 .header-content
     background-color: #02160b
+
     .wrapper
         min-height: 779px
-        background: url('../images/main-img.jpg') center (center/cover) no-repeat
+        background: url(../images/main-img.jpg) center no-repeat
         filter: drop-shadow(-150px 0px 150px #02160B)
+        margin: 0 auto
+        padding: 20px 120px 150px 120px
 
     header
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         .logo
             width: 240px
             height: 60px
-            margin-top: 20px
             display: flex
             justify-content: space-around
             align-items: center
@@ -25,27 +27,27 @@
                 text-transform: uppercase
                 color: $font-light
         nav
-            width: 478px
+            width: 480px
             height: 48px
-            margin-top: 20px
             display: flex
-            justify-content: space-between
-            border: 1px solid red
+            align-items: center
             ul li
                 display: inline
                 font-weight: 400
                 font-size: 23px
                 color: $font-light
                 list-style: none
+                margin-right: 60px
             .search
                 background: url('../icons/search-icon.svg') no-repeat
                 width: 32px
                 height: 32px
+                margin-right: 60px
             button
                 width: 120px
                 height: 50px
                 background-color: transparent
-                border: 2px solid #CD6326
+                border: 2px solid $orange-main
                 box-sizing: border-box
                 outline: none
                 border-radius: 5px
@@ -57,10 +59,15 @@
                 background-color: $orange-main
                 color: $font-dark
                 cursor: pointer
+                outline: none
+
             button:active
                 background-color: $orange-dark
                 color: $font-dark
+                border: 2px solid $orange-dark
                 cursor: pointer
+                outline: none
+
     .donate
         margin-top: 120px
         display: flex
