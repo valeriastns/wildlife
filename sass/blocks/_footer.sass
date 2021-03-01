@@ -4,15 +4,16 @@ footer
     display: flex
     justify-content: space-around
     align-items: center
+    position: relative
     .logo
-        width: 260px
-        height: auto
+        width: 226px
         display: flex
-        margin-left: 70px
+        position: absolute
+        left: 120px
         &__icon
             width: 70px
             height: 60px
-            background: url('../icons/logo.svg')
+            background: url('../icons/logo.svg') center no-repeat
             margin-right: 14px
 
         &__text
@@ -22,8 +23,9 @@ footer
             color: $font-light
             margin-top: 5px
     nav
-        width: 500px
+        width: 479px
         height: 60px
+        position: absolute
         ul
             display: flex
             justify-content: space-between
@@ -31,7 +33,8 @@ footer
             display: inline-block
             list-style: none
             margin-top: 13px
-            padding-right: 26px
+        ul li:nth-child(3)
+            padding-right: 0
         ul li a
             font-size: 23px
             color: $font-light
@@ -42,19 +45,25 @@ footer
             transition: 300ms ease
 
     .social-links
-        display: flex
-        margin-right: 68px
-        a
-            width: 40px
-            height: 40px
-            border-radius: 100%
-            margin-right: 27px    
-    .social-links a:nth-child(1)
-        background: url('../icons/facebook.svg') center no-repeat
-    .social-links a:nth-child(2)
-        background: url('../icons/instagram.svg') center no-repeat
-    .social-links a:nth-child(3)
-        background: url('../icons/pinterest.svg') center no-repeat
-    .social-links a:nth-child(4)
-        background: url('../icons/youtube.svg') center center/cover no-repeat
-        margin-right: 0
+        position: absolute
+        top: 160px
+        right: 120px
+        width: 243px
+        ul
+            display: flex
+            justify-content: space-between
+            li
+                list-style: none
+            a
+                display: block
+                width: 40px
+                height: 40px
+                border-radius: 100%
+        ul li:nth-child(1)
+            background: url('../icons/facebook.svg') center no-repeat
+        ul li:nth-child(2)
+            background: url('../icons/instagram.svg') center no-repeat
+        ul li:nth-child(3)
+            background: url('../icons/pinterest.svg') center no-repeat
+        ul li:nth-child(4)
+            background: url('../icons/youtube.svg') center center/cover no-repeat
