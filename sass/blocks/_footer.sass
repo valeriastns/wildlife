@@ -1,0 +1,59 @@
+footer
+    height: 360px
+    background: url('../images/footer-img.jpg') center no-repeat
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .logo
+        width: 260px
+        height: auto
+        display: flex
+        margin-left: 70px
+        &__icon
+            width: 70px
+            height: 60px
+            background: url('../icons/logo.svg')
+            margin-right: 14px
+
+        &__text
+            font-weight: normal
+            font-size: 32px
+            text-transform: uppercase
+            color: $font-light
+            margin-top: 5px
+    nav
+        width: 500px
+        height: 60px
+        ul
+            display: flex
+            justify-content: space-between
+        ul li
+            display: inline-block
+            list-style: none
+            margin-top: 13px
+            padding-right: 26px
+        ul li a
+            font-size: 23px
+            color: $font-light
+            text-transform: capitalize
+            text-decoration: none
+
+    .social-links
+        display: flex
+        margin-right: 68px
+    .social-links
+        a
+            width: 40px
+            height: 40px
+            background-color: $font-light
+            border-radius: 100%
+            margin-right: 27px
+    .social-links a:nth-child(1)
+        background: url('../icons/facebook.svg') center no-repeat
+    .social-links a:nth-child(2)
+        background: url('../icons/instagram.svg') center no-repeat
+    .social-links a:nth-child(3)
+        background: url('../icons/pinterest.svg') center no-repeat
+    .social-links a:nth-child(4)
+        background: url('../icons/youtube.svg') center center/cover no-repeat
+        margin-right: 0

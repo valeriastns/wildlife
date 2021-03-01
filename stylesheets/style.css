@@ -289,6 +289,91 @@
   border: 1px solid #CD6326;
 }
 
+/* line 1, ../sass/blocks/_footer.sass */
+footer {
+  height: 360px;
+  background: url("../images/footer-img.jpg") center no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* line 7, ../sass/blocks/_footer.sass */
+footer .logo {
+  width: 260px;
+  height: auto;
+  display: flex;
+  margin-left: 70px;
+}
+/* line 12, ../sass/blocks/_footer.sass */
+footer .logo__icon {
+  width: 70px;
+  height: 60px;
+  background: url("../icons/logo.svg");
+  margin-right: 14px;
+}
+/* line 18, ../sass/blocks/_footer.sass */
+footer .logo__text {
+  font-weight: normal;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  margin-top: 5px;
+}
+/* line 24, ../sass/blocks/_footer.sass */
+footer nav {
+  width: 500px;
+  height: 60px;
+}
+/* line 27, ../sass/blocks/_footer.sass */
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 30, ../sass/blocks/_footer.sass */
+footer nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 13px;
+  padding-right: 26px;
+}
+/* line 35, ../sass/blocks/_footer.sass */
+footer nav ul li a {
+  font-size: 23px;
+  color: #f7f7f7;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 41, ../sass/blocks/_footer.sass */
+footer .social-links {
+  display: flex;
+  margin-right: 68px;
+}
+/* line 45, ../sass/blocks/_footer.sass */
+footer .social-links a {
+  width: 40px;
+  height: 40px;
+  background-color: #f7f7f7;
+  border-radius: 100%;
+  margin-right: 27px;
+}
+/* line 51, ../sass/blocks/_footer.sass */
+footer .social-links a:nth-child(1) {
+  background: url("../icons/facebook.svg") center no-repeat;
+}
+/* line 53, ../sass/blocks/_footer.sass */
+footer .social-links a:nth-child(2) {
+  background: url("../icons/instagram.svg") center no-repeat;
+}
+/* line 55, ../sass/blocks/_footer.sass */
+footer .social-links a:nth-child(3) {
+  background: url("../icons/pinterest.svg") center no-repeat;
+}
+/* line 57, ../sass/blocks/_footer.sass */
+footer .social-links a:nth-child(4) {
+  background: url("../icons/youtube.svg") center center/cover no-repeat;
+  margin-right: 0;
+}
+
 /* line 8, ../sass/style.sass */
 * {
   font-family: "Open Sans", sans-serif;
@@ -308,6 +393,11 @@
 }
 
 /* line 20, ../sass/style.sass */
+.wrapper-footer {
+  background-color: #181617;
+}
+
+/* line 23, ../sass/style.sass */
 .container {
   max-width: 1440px;
   margin: 0 auto;
