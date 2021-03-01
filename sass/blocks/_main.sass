@@ -11,32 +11,38 @@
             font-size: 48px
             color: $font-dark
             margin-top: 120px
+            padding: 5px
         &__text
             font-size: 24px
             color: $font-grey
             margin-top: 20px
+            margin-bottom: 120px
     .slides
         display: flex
+        padding-bottom: 252px
         div.img
             width: 300px
             height: 360px
-            margin-left: 60px
-            margin-right: 60px
             display: flex
             flex-direction: column
             justify-content: flex-end
             align-items: center
         div.img.first
             background: url('../images/deer.jpg')
+            margin-left: 60px
+            margin-right: 60px
         div.img.second
             background: url('../images/squirrel.jpg')
         div.img.third
             background: url('../images/bird.jpg')
+            margin-left: 60px
+            margin-right: 60px
         div.img
             &__title
                 color: $font-light
                 font-size: 22px
                 font-weight: 400
+                line-height: 41px
             &__descr
                 color: $font-light
                 font-weight: normal
@@ -50,6 +56,7 @@
             font-size: 27px
             color: $font-dark
             font-weight: normal
+            margin-top: -10px
         form
             margin-left: -80px
             input[type="email"]
