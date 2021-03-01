@@ -187,9 +187,10 @@
 /* line 20, ../sass/blocks/_main.sass */
 .latest-articles .slides {
   display: flex;
+  position: relative;
   padding-bottom: 252px;
 }
-/* line 23, ../sass/blocks/_main.sass */
+/* line 24, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img {
   width: 300px;
   height: 360px;
@@ -198,30 +199,30 @@
   justify-content: flex-end;
   align-items: center;
 }
-/* line 30, ../sass/blocks/_main.sass */
+/* line 31, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img.first {
   background: url("../images/deer.jpg");
   margin-left: 60px;
   margin-right: 60px;
 }
-/* line 34, ../sass/blocks/_main.sass */
+/* line 35, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img.second {
   background: url("../images/squirrel.jpg");
 }
-/* line 36, ../sass/blocks/_main.sass */
+/* line 37, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img.third {
   background: url("../images/bird.jpg");
   margin-left: 60px;
   margin-right: 60px;
 }
-/* line 41, ../sass/blocks/_main.sass */
+/* line 42, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img__title {
   color: #f7f7f7;
   font-size: 22px;
   font-weight: 400;
   line-height: 41px;
 }
-/* line 46, ../sass/blocks/_main.sass */
+/* line 47, ../sass/blocks/_main.sass */
 .latest-articles .slides div.img__descr {
   color: #f7f7f7;
   font-weight: normal;
@@ -229,23 +230,41 @@
   margin-top: 10px;
   margin-bottom: 40px;
 }
-/* line 52, ../sass/blocks/_main.sass */
+/* line 53, ../sass/blocks/_main.sass */
+.latest-articles .right-arrow {
+  position: absolute;
+  top: 144px;
+  right: -29px;
+  width: 30px;
+  height: 70px;
+  background: url("../icons/right-arrow.svg") no-repeat;
+}
+/* line 60, ../sass/blocks/_main.sass */
+.latest-articles .left-arrow {
+  position: absolute;
+  top: 144px;
+  left: -31px;
+  width: 30px;
+  height: 70px;
+  background: url("../icons/left-arrow.svg") no-repeat;
+}
+/* line 67, ../sass/blocks/_main.sass */
 .latest-articles .form {
   position: relative;
   margin-bottom: 239px;
 }
-/* line 55, ../sass/blocks/_main.sass */
+/* line 70, ../sass/blocks/_main.sass */
 .latest-articles .form__title {
   font-size: 27px;
   color: #333333;
   font-weight: normal;
   margin-top: -10px;
 }
-/* line 60, ../sass/blocks/_main.sass */
+/* line 75, ../sass/blocks/_main.sass */
 .latest-articles .form form {
   margin-left: -80px;
 }
-/* line 62, ../sass/blocks/_main.sass */
+/* line 77, ../sass/blocks/_main.sass */
 .latest-articles .form form input[type="email"] {
   width: 540px;
   height: 59px;
@@ -256,7 +275,7 @@
   outline: none;
   border: 1px solid #666666;
 }
-/* line 71, ../sass/blocks/_main.sass */
+/* line 86, ../sass/blocks/_main.sass */
 .latest-articles .form form input[type="submit"] {
   position: absolute;
   bottom: 0px;
