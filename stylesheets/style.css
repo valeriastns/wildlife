@@ -23,7 +23,7 @@
 }
 /* line 17, ../sass/blocks/_hero.sass */
 .header-content header .logo__icon {
-  background: url(../icons/logo.svg);
+  background: url(../icons/logo.svg) no-repeat;
   width: 70px;
   height: 60px;
   margin-left: -5px;
